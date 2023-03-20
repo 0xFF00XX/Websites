@@ -1,0 +1,15 @@
+nav{
+  height: 150px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.navbar-collapsable{
+  display: none;
+  width: 50%;
+  background-color: red;
+  
+}
