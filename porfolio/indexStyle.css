@@ -1,5 +1,9 @@
+html,body{
+  padding: 0;
+  margin: 0;
+}
 nav{
-  height: 150px;
+  height: 100px;
   background-color: grey;
   display: flex;
   justify-content: center;
@@ -7,9 +11,30 @@ nav{
 
 
 
+.navbar{
+  width: 20%;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar-option{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+}
+.navbar-option:hover{
+  background-color: green;
+}
+
 .navbar-collapsable{
   display: none;
   width: 50%;
   background-color: red;
-  
+
 }
