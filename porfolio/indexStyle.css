@@ -30,8 +30,9 @@ nav{
 .navbar-option{
   background-color: blue;
 
-  height: 100%;
-  width: 100px;
+  height: 100px;
+  width: 100%;
+  margin-left: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,9 +45,9 @@ nav{
 
 .navbar-collapsable{
   top: 0;
-  right: 90px;
+  left: 0px;
   width:60%;
-  height: 100px;
+  height:fit-content;
   display: none;
   position: fixed;
   /* width: 50%; */
@@ -57,7 +58,7 @@ nav{
 
 
 #nav-icon2 {
- right: 30px;
+ left:5px;
  display: none;
  width: 50px;
  position: fixed;
@@ -94,7 +95,8 @@ nav{
   border-radius: 9px 0 0 9px;
 }
 
-#nav-icon2 span:nth-child(1){]
+#nav-icon2 span:nth-child(1){
+  top: 0px;
 }
 #nav-icon2 span:nth-child(2) {
   top: -6px;
