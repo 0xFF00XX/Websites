@@ -7,8 +7,10 @@ body{
 
 }
 nav{
+
   width: 100%;
   position:static;
+  min-height: 1vh;
   height: 60px;
   background-color: grey;
   display: flex;
@@ -30,9 +32,10 @@ nav{
 .navbar-option{
   background-color: blue;
 
-  height: 100px;
+  height: 100%;
   width: 100%;
-  margin-left: 55px;
+  /* margin-left: 55px; */
+  padding: 0 10px 0 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,7 +165,46 @@ nav{
 
 
 
+/* HERO */
+.hero-main{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: red;
+  height: calc(100vh - 60px);
+
+}
+.hero-text{
+padding: 40px;
+font-size: 1.5em;
+font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+
+
+
 @media (max-width: 768px) {
+  nav{
+    height: 300px;
+  }
+  #nav-icon2 {
+    height: 100px;
+    display:block;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+  nav{
+    height: 100px;
+  }
+
   #nav-icon2 {
     display:block;
   }
