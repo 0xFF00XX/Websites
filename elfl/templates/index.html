@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Sample Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/loader.css') }}">
+
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+  <div class="loader">
+    <span class="loader-text">loading</span>
+      <span class="load"></span>
+  </div>
+
+  <h1>Welcome to Flask Sample Page</h1>
+    <button class="collapse-button">Collapse/Expand</button>
+    <div class="content">
+  <p>This is some hidden content that will collapse and appear again when the button is clicked.</p>
+</div>
+</body>
+</html>
