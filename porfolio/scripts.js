@@ -1,17 +1,11 @@
-window.addEventListener('mouseup', function(event) {
-  var menu = document.getElementById('mobile-navbar');
-  if (event.target != menu && vent.target.parentNode != menu) {
-    menu.style.display = 'none';
-  }
-});
+// Add active class to the clicked menu item
+var navbar = document.getElementById("navbar");
+var navItems = navbar.getElementsByTagName("a");
 
-function navBarToggle() {
-  var x = document.getElementById("mobile-navbar");
-  var element = document.getElementById("nav-icon2");
-  element.classList.toggle("open");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+for (var i = 0; i < navItems.length; i++) {
+  navItems[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }
