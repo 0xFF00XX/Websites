@@ -1,0 +1,122 @@
+html{
+
+  height: 100vh;
+}
+body{
+  min-width: 1024px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: pink;
+
+}
+.base{
+  margin: 50px 0 0 50px;
+  background-color: silver;
+  width: 90%;
+
+  height: 90%;
+}
+
+
+
+.main {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+
+  /* background-color: orange */
+}
+
+.selectors {
+
+  width: 25%;
+  min-width: 300px;
+  height: 600px;
+  background-color: #ffcc00; /* Adjust the background color as needed */
+}
+.dials{
+  margin: 30px 0 0 0;
+}
+#form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.results{
+  /* margin: 0 0 0 300px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.graph {
+  height: 400px;
+  width: 800px;
+
+  background-color: #0099cc; /* Adjust the background color as needed */
+}
+
+.table {
+  height: 150px;
+
+  background-color: #66cc66; /* Adjust the background color as needed */
+}
+
+/* Style for the dropdown container */
+
+.drop {
+  margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    width: 200px; /* Adjust the width as needed */
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    cursor: pointer;
+}
+
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000; /* Black arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+
+   /* Smooth rotation transition */
+}
+.caret-1{
+  transform: translateY(-50%) rotate(90deg);
+  transition: transform 0.3s;
+}
+.caret-2{
+  transform: translateY(-50%) rotate(90deg);
+  transition: transform 0.3s;
+}
+
+/* Rotate the caret when the dropdown is open */
+.drop.expanded .caret-1 {
+  transform: translateY(-50%) rotate(0deg);
+}
+.drop.expanded .caret-2 {
+  transform: translateY(-50%) rotate(0deg);
+}
+
+
+#groups::placeholder{
+  color: grey;
+}

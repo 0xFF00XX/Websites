@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1> This is Home Page</h1>
+
+<div class="base">
+  <div class="main">
+    <div class="selectors">
+      <div class="dials">
+
+        <form method="POST" action="/" id="form">
+          <label for="options">Choose metrics:</label>
+          <!-- drop 1 -->
+          <div class="drop drop-1">
+            <div class="select-wrapper">
+              <select name="select" id="select-option" class="form-control">
+                <option value=" " disabled selected hidden>Select an option</option>
+                <option value="Option_one">Option one</option>
+                <option value="Option_two">Option two</option>
+              </select>
+            </div>
+            <div class="caret caret-1"></div>
+          </div>
+          <!-- end drop 1 -->
+          <!-- drop 2  -->
+          <div class="drop drop-2">
+            <div class="select-wrapper">
+              <select name="select" id="select-option1" class="form-control">
+                <option value=" " disabled selected hidden>Select an option</option>
+                <option value="Option_one">Option 3</option>
+                <option value="Option_two">Option 4</option>
+              </select>
+            </div>
+            <div class="caret caret-2"></div>
+          </div>
+          <!-- end drop 2 -->
+          <input type="submit" value="Submit">
+        </form>
+
+
+      </div>
+
+    </div>
+    <div class="results">
+      <div class="graph"  id="res">
+        2
+      </div>
+      <div class="table">
+        3
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<script src="{{ url_for('static', filename='snippets.js') }}"></script>
+{% endblock %}
